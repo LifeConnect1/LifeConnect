@@ -1,0 +1,14 @@
+.h3log{
+    color:#1A5C65 ;
+}
+.btn2{
+    background-color: #1A5C65;
+    color: white; 
+    border: none; 
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  .from-label{
+    text-align: left;
+}
