@@ -8,7 +8,7 @@ function PatientRegister() {
     <form className='p-4 border '>
     <h3 className='h3log'>Let us know more about you</h3>
        <div className='mb-3'>
-        <label htmlFor="fullname text-algin-left" className="form-label">FullName</label>
+        <label htmlFor="fullname text-algin-left" className="form-label">Username</label>
         <input type="text" id="fulname" className="form-control" {...{required:true}}/>
        </div>
 
