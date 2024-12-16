@@ -6,12 +6,12 @@
   }
   
 form {
-    max-width: 400px; 
-    width: 150%; 
-    margin-right: 30px;
+    max-width: 600px; 
+    width: 190%; 
+    margin-right: 300px;
     }
 .form-label {
-      text-align: left;
+      text-align:left;
       display: block;
     }
     
@@ -30,4 +30,5 @@ form {
   .btn2:hover {
       background-color: #1f7880; 
       transform: scale(1.05); 
+      
   }

@@ -1,11 +1,11 @@
 import React from 'react'
-
+import './patientregister.css'
 function PatientRegister() {
   return (
     <div className='d-flex justify-content-center align-items-center mt-5 mb-5'>
     <div className="text-center">
       
-    <form className='p-4 border'>
+    <form className='p-4 border '>
     <h3 className='h3log'>Let us know more about you</h3>
        <div className='mb-3'>
         <label htmlFor="fullname text-algin-left" className="form-label">FullName</label>
