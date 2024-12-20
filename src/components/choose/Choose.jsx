@@ -15,31 +15,27 @@ function Choose() {
 
   return (
     <div className="first">
-      {/* Logo */}
-      <div className="logo mb-5">
-        <img src="" alt="Logo" />
-      </div>
       <div className='second p-5 rounded'>
-      {/* Profile Picture */}
-      <div className="profile-pic text-center">
-        <img
-          src="https://static-00.iconduck.com/assets.00/profile-circle-icon-1024x1022-cc95v9e3.png"
-          alt="Profile" 
-        />
-      </div>
+        {/* Profile Picture */}
+        <div className="profile-pic text-center">
+          <img
+            src="https://static-00.iconduck.com/assets.00/profile-circle-icon-1024x1022-cc95v9e3.png"
+            alt="Profile" 
+          />
+        </div>
 
-      {/* Choose Your Profile */}
-      <h2 className="choose-text">Choose Your Profile</h2>
+        {/* Choose Your Profile */}
+        <h2 className="choose-text">Choose Your Profile</h2>
 
-      {/* Buttons */}
-      <div className="buttons">
-        <button className="choose-btn" onClick={handlePatientClick}>
-          I am a Patient
-        </button>
-        <button className="choose-btn" onClick={handleDoctorClick}>
-          I am a Doctor
-        </button>
-      </div>
+        {/* Buttons */}
+        <div className="buttons">
+          <button className="choose-btn" onClick={handlePatientClick}>
+            I am a Patient
+          </button>
+          <button className="choose-btn" onClick={handleDoctorClick}>
+            I am a Doctor
+          </button>
+        </div>
       </div>
     </div>
   );

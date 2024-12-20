@@ -1,39 +1,41 @@
 import React from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { IoIosArrowBack } from "react-icons/io";
+import { FiSettings } from "react-icons/fi";
 import './Header.css';
-import { useNavigate } from 'react-router-dom';
-import { RiLoginCircleFill } from "react-icons/ri";
-import { CiUser } from "react-icons/ci";
-import { IoIosInformationCircle } from "react-icons/io";
 
 function Header() {
    const navigate = useNavigate();
-  
-   const registerclick = () => {
-      navigate('/patientregister');
+   const location = useLocation();
+
+   const goBack = () => {
+      navigate(-1);
    };
-  
-   const loginclick = () => {
-      navigate('/choose');
+
+   const openSettings = () => {
+      navigate('/settings'); // Navigate to the settings page
    };
-  
-  return (
-    <header className="header">
-      <div className="logo">
-        <img src="https://lifeconnect.lu/wp-content/uploads/2023/04/lifeconnect_logo_no-text.jpg"  alt="Logo" /> 
-      </div>
-      <div className="nav-icons d-flex rt-icons">
-        <div onClick={registerclick} style={{ cursor: 'pointer' }}>
-          <RiLoginCircleFill title='register' />
-        </div>
-        <div onClick={loginclick} style={{ cursor: 'pointer' }}>
-          <CiUser title='login' />
-        </div>
-        <div onClick={() => navigate('/about')} style={{ cursor: 'pointer' }}>
-          <IoIosInformationCircle title='about' />
-        </div>
-      </div>
-    </header>
-  );
+
+   return (
+      <header className="header ">
+         {location.pathname === '/' ? (
+            // Display logo only on the main homepage
+            <div className="logo">
+               <img src="https://lifeconnect.lu/wp-content/uploads/2023/04/lifeconnect_logo_no-text.jpg" alt="Logo" />
+            </div>
+         ) : (
+            // Display Go Back and Settings icons on other pages
+            <div className="header-nav">
+               <div className="go-back" onClick={goBack} style={{ cursor: 'pointer' }}>
+                  <IoIosArrowBack title="Go Back" />
+               </div>
+               <div className="settings" onClick={openSettings} style={{ cursor: 'pointer' }}>
+                  <FiSettings title="Settings" />
+               </div>
+            </div>
+         )}
+      </header>
+   );
 }
 
 export default Header;

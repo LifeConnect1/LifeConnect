@@ -2,12 +2,14 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import './Home.css'; 
 
 function Home() {
   const images = [
-    'https://via.placeholder.com/800x400?text=Image+1',
-    'https://via.placeholder.com/800x400?text=Image+2',
-    'https://via.placeholder.com/800x400?text=Image+3',
+    'https://quotefancy.com/media/wallpaper/3840x2160/2245689-Jonathan-Swift-Quote-The-best-doctors-in-the-world-are-Doctor-Diet.jpg',
+    'https://i1.wp.com/www.uniquenewsonline.com/wp-content/uploads/2020/07/National-Doctors-Day-2020-Quotes-With-HD-Images-Thoughtful-Sayings.jpg?fit=1200%2C667&ssl=1&is-pending-load=1',
+    'https://images.hindustantimes.com/rf/image_size_640x362/HT/p2/2020/06/30/Pictures/_c1f2d8e2-baa7-11ea-b411-fb55c265b659.jpg'
+    
   ];
 
   const settings = {
@@ -25,10 +27,11 @@ function Home() {
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index}>
-            <img src={image} alt={`Slide ${index + 1}`} style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
+            <img src={image} alt={`Slide ${index + 1}`} />
           </div>
         ))}
-      </Slider>
+      </Slider>  
+
     </div>
   );
 }

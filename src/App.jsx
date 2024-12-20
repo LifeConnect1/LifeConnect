@@ -7,8 +7,8 @@ import Choose from './components/choose/choose';
 import PatientLogin from './components/patientlogin/PatientLogin';
 import HospitalLogin from './components/hospitallogin/HospitalLogin';
 import PatientRegister from './components/patientreigster/PatientRegister';
-
-
+import PatientProfile from './components/patientprofile/PatientProfile';
+import Location from './components/location/Location';
 
 function App() {
   const browserRouter = createBrowserRouter([
@@ -36,6 +36,14 @@ function App() {
         {
           path:"/patientregister",
           element: <PatientRegister />
+        },
+        {
+          path:"/patientprofile",
+          element: <PatientProfile/>
+        },
+        {
+          path:'/location',
+          element:<Location />
         }
       ]
     }

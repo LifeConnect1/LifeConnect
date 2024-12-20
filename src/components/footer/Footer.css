@@ -1,0 +1,22 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1a5c64;
+    display: flex;
+    justify-content: center; 
+    padding: 17px 0;
+   
+}
+
+.nav-icons {
+    display: flex; 
+    gap: 30px; 
+    mix-blend-mode: multiply;
+    font-size: 1.2em;
+    justify-content: space-between;
+    font-size: 24px;
+    
+
+}
+

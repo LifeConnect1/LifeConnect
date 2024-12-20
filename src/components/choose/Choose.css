@@ -1,58 +1,91 @@
+/* Centering styles */
 .first {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 0; 
+}
+
+/* .logo {
+  text-align: center;
+  margin-bottom: 20px;
+} */
+
+/* .logo img {
+  max-width: 80px; 
+} */
+
+.profile-pic {
+  margin-bottom: 20px;
+}
+
+.profile-pic img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.second {
+  box-shadow: 2px 3px 2px 3px gray;
+  /* Moving the box upwards */
+  margin-top: -5%; /* Adjust the value to move the box up more */
+  transition: all 0.3s ease; /* Optional: Smooth transition effect */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .first {
+    padding-top: 5%; /* Adjust padding for tablet devices */
   }
-  
-  .logo {
-    text-align: center;
-    margin-bottom: 20px;
+
+  .second {
+    padding: 20px; /* Adjust padding for smaller screens */
   }
-  
-  .logo img {
-    max-width: 80px; 
-  }
-  
-  .profile-pic {
-    margin-bottom: 20px;
-  }
-  
-  .profile-pic img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    text-align: center;
-  }
-  .second{
-    box-shadow: 2px 3px 2px 3px gray;
-  }
-  
-  .choose-text {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    
-  }
-  
+
   .choose-btn {
-    padding: 10px 20px;
-    border: 1px solid #ccc;
-    border-radius: 47px;
-    cursor: pointer;
-    background-color: #1A5C65;
-    color: white; 
-    transition: background-color 0.3s ease, transform 0.2s ease; 
+    padding: 8px 16px; /* Reduce padding for smaller screens */
   }
-  
-  .choose-btn:hover {
-    background-color: #144b52; 
-    transform: scale(1.05); 
+}
+
+@media (max-width: 480px) {
+  .first {
+    padding-top: 2%; /* Adjust padding for mobile devices */
   }
-  
+
+  .second {
+    padding: 15px; /* Further reduce padding for mobile devices */
+  }
+
+  .choose-btn {
+    padding: 6px 12px; /* Adjust button size for mobile devices */
+  }
+}
+
+.choose-text {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.choose-btn {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 47px;
+  cursor: pointer;
+  background-color: #1A5C65;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.choose-btn:hover {
+  background-color: #144b52;
+  transform: scale(1.05);
+}

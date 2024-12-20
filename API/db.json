@@ -1,0 +1,14 @@
+{
+  "clients": [
+    {
+      "id": "1c84",
+      "username": "bhavana",
+      "email": "bhavanakaila07@gmail.com",
+      "password": "123456",
+      "mobile": "9030552549",
+      "age": "21",
+      "gender": "Female"
+    }
+  ],
+  "hospitalMgmt": []
+}
