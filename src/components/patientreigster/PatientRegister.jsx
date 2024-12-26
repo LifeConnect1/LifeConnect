@@ -3,8 +3,7 @@ import './patientregister.css'
 import { useForm } from 'react-hook-form'
 import { Link, useNavigate} from 'react-router-dom'
 import { useState } from 'react'
-import { patientLoginContext } from '../../Contexts/patientLoginContext'
-
+import { patientLoginContext } from '../../Contexts/PatientLoginContext'
 
 
 function PatientRegister() {
@@ -76,7 +75,7 @@ function PatientRegister() {
         </select>
        </div>
 
-      <button type="submit" className="btn btn2">Connect your Life with Us!</button>
+      <button type="submit" className="btn btn2 text-white">Connect your Life with Us!</button>
     </form>
     </div>
   </div>

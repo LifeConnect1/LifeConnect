@@ -28,7 +28,7 @@ function PatientLogin() {
 
 
   return (
-    <div className="login d-flex text-center justify-content-center">
+    <div className="login">
       <div className="text-center">
         <h3 className="h3login mb-4">Login into your Account</h3>
 
@@ -37,7 +37,7 @@ function PatientLogin() {
           }
 
 
-        <form className="p-4 mt-5 border rounded" onSubmit={handleSubmit(onClientLogin)}>
+        <form className="loginform p-4 mt-5 border rounded" onSubmit={handleSubmit(onClientLogin)}>
           <div className="mb-3">
             <label htmlFor="username" className="form-label">UserName</label>
             <input type="text" id="username" className="form-control" {...register("username", {required: true})}  />
@@ -48,7 +48,7 @@ function PatientLogin() {
             <input type="password" className="form-control" {...register("password", {required:true})}/>
             {errors.password?.type === 'required' && <p className='text-danger lead'>*Password is required</p>} 
           </div>
-          <button className="btn2 btn px-5 text-center " type="submit">Signin</button>
+          <button className="btn2 btn px-5 text-center text-white " type="submit">Signin</button>
           <h6 className="mt-3">Don't have an account? <Link to="/patientregister">Register</Link></h6>
         </form>
       </div>

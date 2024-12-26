@@ -1,22 +1,60 @@
+
 .footer {
+    background-color: #1A5C65;
+    padding: 13px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #1a5c64;
-    display: flex;
-    justify-content: center; 
-    padding: 17px 0;
-   
+    
+    z-index: 100;
 }
 
 .nav-icons {
-    display: flex; 
-    gap: 30px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
     mix-blend-mode: multiply;
-    font-size: 1.2em;
-    justify-content: space-between;
-    font-size: 24px;
-    
-
 }
 
+.nav-icons div {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-icons div:hover {
+    transform: scale(1.1);
+}
+
+.nav-icons svg {
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.2s ease-in-out;
+}
+
+
+
+.nav-icons div:hover svg {
+    color: #83c19b;
+}
+@media (max-width: 768px) {
+    .nav-icons svg {
+        font-size: 1.25rem;
+    }
+}
+@media (max-width: 992px) {
+    .footer {
+        padding: 15px 0;
+    }
+    .nav-icons svg {
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 1200px) {
+    .nav-icons {
+        max-width: 700px;
+    }
+}

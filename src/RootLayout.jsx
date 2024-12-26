@@ -5,17 +5,14 @@ import Footer from './components/footer/Footer';
 
 function RootLayout() {
   const location = useLocation();
-
-  // Paths where the footer should be hidden
-  const hideFooterPaths = ['/login', '/register'];
+  const hideFooterPaths = ['/patientlogin', '/patientregister', '/'];
 
   return (
     <div>
       <Header />
-      <div style={{ minHeight: "150vh" }} className="layout">
+      <div className="layout">
         <Outlet />
       </div>
-      {/* Conditionally render the Footer */}
       {!hideFooterPaths.includes(location.pathname) && <Footer />}
     </div>
   );

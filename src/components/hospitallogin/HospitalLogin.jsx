@@ -16,7 +16,7 @@ function HospitalLogin() {
             <label htmlFor="password" className="form-label">Password</label>
             <input type="password" className="form-control" />
           </div>
-          <button className="btn3 btn px-5 text-center" type="submit">Signin</button>
+          <button className="btn3 btn px-5 text-center text-white" type="submit">Signin</button>
           <h6 className="mt-3">
             Don't have an account? <Link to="/hospitalregister">Register</Link>
           </h6>

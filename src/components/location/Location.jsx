@@ -16,7 +16,7 @@ function Location() {
 
   const handleCardClick = (place) => {
     console.log(place)
-    navigate('')
+    navigate('/patient-portal')
   };
 
   return (

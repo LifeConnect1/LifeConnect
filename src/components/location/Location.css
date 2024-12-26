@@ -1,90 +1,88 @@
-
 .heading {
-    text-align: center;
-    margin: 2rem 0;
-  }
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.title1,
+.title2 {
+  color: #1e4a50;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column; 
+  gap: 15px; 
+  align-items: center;
+}
+
+.card {
+  width: 90%;
+  max-width: 400px; 
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.2s ease; 
+}
+
+.card:hover {
+  transform: scale(1.03); 
+  background-color: #1e4a50;
+}
+
+.card-body h5 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
   
+}
+
+.card-body p {
+  margin-top: 5px;
+  font-size: 0.9rem;
+ 
+}
+
+@media (max-width: 768px) {
+  .heading {
+    margin: 1.5rem 0;
+  }
+
   .title1,
   .title2 {
-    color: #1e4a50;
-    font-size: 1.8rem;
-    margin: 0;
+    font-size: 1.5rem; 
   }
-  
-  .cards-container {
-    display: flex;
-    flex-direction: column; 
-    gap: 15px; 
-    align-items: center;
-  }
-  
+
   .card {
-    width: 90%;
-    max-width: 400px; 
-    padding: 1rem;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    transition: transform 0.2s ease; 
-  }
-  
-  .card:hover {
-    transform: scale(1.03); 
-    background-color: #1e4a50;
-  }
-  
-  .card-body h5 {
-    margin: 0;
-    font-size: 1.1rem;
-    font-weight: bold;
-    
-  }
-  
-  .card-body p {
-    margin-top: 5px;
+    padding: 0.8rem; 
     font-size: 0.9rem;
-   
   }
-  
-  @media (max-width: 768px) {
-    .heading {
-      margin: 1.5rem 0;
-    }
-  
-    .title1,
-    .title2 {
-      font-size: 1.5rem; 
-    }
-  
-    .card {
-      padding: 0.8rem; 
-      font-size: 0.9rem;
-    }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    margin: 1rem 0;
   }
-  
-  @media (max-width: 480px) {
-    .heading {
-      margin: 1rem 0;
-    }
-  
-    .title1,
-    .title2 {
-      font-size: 1.3rem;
-    }
-  
-    .card {
-      width: 95%;
-      font-size: 0.8rem;
-    }
-  
-    .card-body h5 {
-      font-size: 1rem;
-    }
-  
-    .card-body p {
-      font-size: 0.8rem;
-    }
+
+  .title1,
+  .title2 {
+    font-size: 1.3rem;
   }
-  
+
+  .card {
+    width: 95%;
+    font-size: 0.8rem;
+  }
+
+  .card-body h5 {
+    font-size: 1rem;
+  }
+
+  .card-body p {
+    font-size: 0.8rem;
+  }
+}

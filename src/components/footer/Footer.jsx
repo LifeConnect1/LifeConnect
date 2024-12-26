@@ -1,53 +1,29 @@
 import React from 'react';
 import './Footer.css';
 import { useNavigate } from 'react-router-dom';
-import { RiLoginCircleFill } from "react-icons/ri";
-import { CiUser } from "react-icons/ci";
-import { IoIosInformationCircle } from "react-icons/io";
+import { IoHomeOutline } from "react-icons/io5";
+import { SlCalender } from "react-icons/sl";
+import { TiMessages } from "react-icons/ti";
+import { FaRegUser } from "react-icons/fa";
 
-function Footer({ isLoggedIn }) {
+function Footer() {
    const navigate = useNavigate();
-
-   const registerClick = () => {
-      navigate('/patientregister');
-   };
-
-   const loginClick = () => {
-      navigate('/choose');
-   };
 
    return (
       <footer className="footer">
          <div className="nav-icons">
-            {isLoggedIn ? (
-               <>
-                  <div onClick={() => navigate('/patient')} style={{ cursor: 'pointer' }}>
-                     {/* Assuming there's an icon for patient page */}
-                     <CiUser title="patient" />
-                  </div>
-                  <div onClick={() => navigate('/calendar')} style={{ cursor: 'pointer' }}>
-                     <IoIosInformationCircle title="calendar" />
-                  </div>
-                  <div onClick={() => navigate('/profile')} style={{ cursor: 'pointer' }}>
-                     <IoIosInformationCircle title="profile" />
-                  </div>
-                  <div onClick={() => navigate('/notifications')} style={{ cursor: 'pointer' }}>
-                     <IoIosInformationCircle title="notifications" />
-                  </div>
-               </>
-            ) : (
-               <>
-                  <div onClick={registerClick} style={{ cursor: 'pointer' }}>
-                     <RiLoginCircleFill title="register" />
-                  </div>
-                  <div onClick={loginClick} style={{ cursor: 'pointer' }}>
-                     <CiUser title="login" />
-                  </div>
-                  <div onClick={() => navigate('/about')} style={{ cursor: 'pointer' }}>
-                     <IoIosInformationCircle title="about" />
-                  </div>
-               </>
-            )}
+            <div onClick={() => navigate('/patient-portal')} style={{ cursor: 'pointer' }}>
+               <IoHomeOutline title="Home" />
+            </div>
+            <div onClick={() => navigate('/calendar')} style={{ cursor: 'pointer' }}>
+               <SlCalender title="Calendar" />
+            </div>
+            <div onClick={() => navigate('/notifications')} style={{ cursor: 'pointer' }}>
+               <TiMessages title="Notifications" />
+            </div>
+            <div onClick={() => navigate('/patientprofile')} style={{ cursor: 'pointer' }}>
+               <FaRegUser title="Profile" />
+            </div>
          </div>
       </footer>
    );

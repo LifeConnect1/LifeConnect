@@ -1,11 +1,14 @@
-/* Centering styles */
+
 .first {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  padding-top: 0; 
+  align-items: center; 
+  width: 100%; 
+  position: fixed;  
+  left: -17px; 
+  padding-top: 200px;  
+  z-index: 1000; 
 }
 
 /* .logo {
@@ -30,37 +33,37 @@
 
 .second {
   box-shadow: 2px 3px 2px 3px gray;
-  /* Moving the box upwards */
-  margin-top: -5%; /* Adjust the value to move the box up more */
-  transition: all 0.3s ease; /* Optional: Smooth transition effect */
+  margin-top: -5%;
+  transition: all 0.3s ease; 
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
   .first {
-    padding-top: 5%; /* Adjust padding for tablet devices */
+    padding-top: 30%; 
   }
 
   .second {
-    padding: 20px; /* Adjust padding for smaller screens */
+    padding: 20px; 
   }
 
   .choose-btn {
-    padding: 8px 16px; /* Reduce padding for smaller screens */
+    padding: 8px 16px; 
   }
 }
 
 @media (max-width: 480px) {
   .first {
-    padding-top: 2%; /* Adjust padding for mobile devices */
+    padding-top: 35%; 
+    left:3.2px;
   }
 
   .second {
-    padding: 15px; /* Further reduce padding for mobile devices */
+    padding: 15px; 
   }
 
   .choose-btn {
-    padding: 6px 12px; /* Adjust button size for mobile devices */
+    padding: 6px 12px; 
   }
 }
 

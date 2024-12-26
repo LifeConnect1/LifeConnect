@@ -1,0 +1,125 @@
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .profile-box {
+    width: 100%;
+    max-width: 400px; 
+    padding: 2rem;
+    border: 1px solid #000; 
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  .profile-header-1{
+    display: flex;
+    
+  }
+  .edit-button {
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding-top: -5 rem;
+  }
+  
+  .profile-field {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    color: #58d68d;
+  }
+
+  .line-input {
+    flex: 1;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    font-size: 1rem;
+    padding: 0.3rem 0;
+  }
+  
+  .line-input:focus {
+    border-bottom: 2px solid #000;
+  }
+  
+  select.line-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0.3rem 0;
+  }
+  
+  .button-group {
+    display: flex;
+   /* justify-content: space-between;*/
+    margin-bottom: 1.2rem;
+    border-radius: 5px;
+  }
+  
+  button {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border: 1px solid #000;
+    background: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background: #f0f0f0;
+  }
+
+  .button-group button.consultation{
+    color: white ;
+    background-color:#1A5C65 ; 
+    border-radius: 13px;
+    margin-left: 0.3rem;
+  }
+
+  .button-group button.follow-up  {
+    border-color: #1A5C65;
+    color:#1A5C65;
+    border-radius: 15px;
+    margin-left: 2.5rem;
+  }
+  .profile-user{
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .profile-photo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-photo-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  .profile-photo-input {
+    display: none;
+  }
+
+.react-icons{
+    color: #58d68d;
+}
