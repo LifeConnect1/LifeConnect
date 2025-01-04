@@ -3,7 +3,7 @@ import './patientregister.css'
 import { useForm } from 'react-hook-form'
 import { Link, useNavigate} from 'react-router-dom'
 import { useState } from 'react'
-import { patientLoginContext } from '../../Contexts/PatientLoginContext'
+import { patientLoginContext } from '../../Contexts/patientLoginContext'
 
 
 function PatientRegister() {
