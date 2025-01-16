@@ -1,25 +1,47 @@
-
 .h3log {
   color: #1A5C65;
   text-align: center;
 }
 
-.btn2 {
+.pbtn {
   background-color: #1A5C65;
-  color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 4px 3px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+}
+.patient-form{
+  width: 100%;
+  padding:10px 300px;
 }
 
-.from-label {
-  text-align: left;
-}
-
-.error {
+.perror {
   margin-left: -4em;
 }
+@media (min-width: 481px) and (max-width: 1024px) {
+  .patient-form {
+    padding: 10px 50px;
+    height: auto;
+  }
 
+  .h3log {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .pbtn {
+    padding: 5px 8px;
+    width: 100%;
+    font-size: 1.1em;
+  }
+
+  .perror {
+    margin-left: 0;
+    font-size: 0.9em;
+  }
+}
 
 @media (max-width: 480px) {
   .h3log {
@@ -27,20 +49,23 @@
     text-align: center;
   }
 
-  .btn2 {
-    padding: 6px 12px;
+  .pbtn {
+    padding: 5px 8px;
     width: 100%;
     font-size: 0.8em;
   }
 
-  .from-label {
+  /* .from-label {
     font-size: 0.8em;
     text-align: left;
-  }
+  } */
 
-  .error {
+  .perror {
     margin-left: 0;
     font-size: 0.7em;
     color: red;
+  }
+  .patient-form{
+    padding: 0 0;
   }
 }

@@ -1,0 +1,72 @@
+.hlog {
+  color: #1A5C65;
+  text-align: center;
+}
+
+.btn3 {
+  background-color: #1A5C65 !important;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.hospital-form {
+  width: 100%;
+  padding: 10px 300px;
+  height: 120vh;
+}
+
+.herror {
+  margin-left: -4em;
+}
+
+@media (max-width: 480px) {
+  .hlog {
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .btn3 {
+    background-color: #1A5C65 !important;
+    padding: 5px 8px;
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .herror {
+    margin-left: 0;
+    font-size: 0.7em;
+    color: red;
+  }
+
+  .hospital-form {
+    padding: 0 0;
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  .hospital-form {
+    padding: 10px 50px;
+    height: auto;
+  }
+
+  .hlog {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .btn3 {
+    background-color: #1A5C65 !important;
+    padding: 5px 8px;
+    width: 100%;
+    font-size: 1.1em;
+  }
+
+  .herror {
+    margin-left: 0;
+    font-size: 0.9em;
+  }
+}

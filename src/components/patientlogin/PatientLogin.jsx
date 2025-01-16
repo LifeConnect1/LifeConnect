@@ -28,7 +28,7 @@ function PatientLogin() {
 
 
   return (
-    <div className="login">
+    <div className="loginform">
       <div className="text-center">
         <h3 className="h3login mb-4">Login into your Account</h3>
 

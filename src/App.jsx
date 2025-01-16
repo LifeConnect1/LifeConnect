@@ -4,12 +4,16 @@ import RootLayout from './RootLayout';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Choose from './components/choose/choose';
 import PatientLogin from './components/patientlogin/PatientLogin';
-import HospitalLogin from './components/hospitallogin/HospitalLogin';
 import PatientRegister from './components/patientreigster/PatientRegister';
 import PatientProfile from './components/patientprofile/PatientProfile';
 import Location from './components/location/Location';
 import Settings from './components/settings/Settings';
 import PatientPortal from './components/patientportal/PatientPortal'
+import Aboutus from './components/settings/Aboutus';
+import Faq from './components/settings/Faq';
+import Contactus from './components/settings/Contactus';
+import HospitalLogin from './HospitalComponents/hospitallogin/HospitalLogin';
+import HospitalRegister from './HospitalComponents/hospitalregister/HospitalRegister';
 
 function App() {
   const browserRouter = createBrowserRouter([
@@ -32,10 +36,6 @@ function App() {
           element: <PatientLogin />
         },
         {
-          path: "/hospitallogin",
-          element: <HospitalLogin />
-        },
-        {
           path:"/patientregister",
           element: <PatientRegister />
         },
@@ -54,7 +54,28 @@ function App() {
         {
           path:'/patient-portal',
           element:<PatientPortal />
+        },
+        {
+          path:'/Aboutus',
+          element:<Aboutus />
+        },
+        {
+          path:'/Faq',
+          element:<Faq />
+        },
+        {
+          path:'/Contactus',
+          element:<Contactus />
+        },
+        {
+          path:'/hospitallogin',
+          element:<HospitalLogin />
+        },
+        {
+          path:'/hospitalregister',
+          element:<HospitalRegister />
         }
+
       ]
     }
   ]);

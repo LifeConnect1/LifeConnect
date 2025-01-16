@@ -1,11 +1,8 @@
-.login {
-  text-align: center;
-  margin-top: 70px;
-}
-
 .loginform {
-  margin: auto;
-  width: 100%;
+  max-width: 65%;
+  padding: 0 20px;
+  margin-top: 70px;
+  margin-left: 17%;
   }
 .form-label {
     text-align:left;
@@ -29,8 +26,31 @@
     transform: scale(1.05); 
     
 }
+
+
 @media  (max-width:480px){
-  .login{
+  .loginform{
+    max-width: 100%;
+    margin-top: 80px;
+    padding: 0 0;
+    margin-left: auto;
+    
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  .loginform {
+    max-width: 95%;
     margin-top: 100px;
+    padding: 0 20px; 
+    margin-left: 13px;
+  }
+
+  .btn2 {
+    padding: 12px 25px; 
+    font-size: 1.1em;
+  }
+
+  .form-label {
+    font-size: 1.1em; 
   }
 }

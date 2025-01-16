@@ -8,7 +8,28 @@
       "mobile": "9030552549",
       "age": "21",
       "gender": "Female"
+    },
+    {
+      "id": "91a1",
+      "username": "ravi",
+      "email": "ravi@gmail.com",
+      "password": "ravi",
+      "mobile": "9765421014",
+      "age": "24",
+      "gender": "Male"
     }
   ],
-  "hospitalMgmt": []
+  "hospitalMgmt": [
+    {
+      "id": "a7c0",
+      "hospitalName": "lalitha hospitals",
+      "email": "lalithahospitha@gmail.com",
+      "registrationNumber": "1234567890",
+      "contactNumber": "9876543210",
+      "address": "vsjdjjlfjdaifj",
+      "city": "vuyyur",
+      "state": "Andhra Pradesh",
+      "zipCode": "521151"
+    }
+  ]
 }

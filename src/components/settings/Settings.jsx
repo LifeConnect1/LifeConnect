@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import './Settings.css';
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { useNavigate } from 'react-router-dom'; 
-import { patientLoginContext } from '../../Contexts/patientLoginContext';
+import { patientLoginContext } from '../../Contexts/PatientLoginContext';
 
 function Settings() {
   const navigate = useNavigate();
@@ -26,19 +26,19 @@ function Settings() {
    
      <div className="setting" >
         <div className={showModal ? "content blur" : "content"}>
-      <div className="settings-option" onClick={() => navigate('/about-us')}>
+      <div className="settings-option" onClick={() => navigate('/Aboutus')}>
         <span>About Us</span>
         <MdOutlineKeyboardArrowRight className="go-to-icon" />
       </div>
-      <div className="settings-option" onClick={() => navigate('/faq')}>
+      <div className="settings-option" onClick={() => navigate('/Faq')}>
         <span>FAQ</span>
         <MdOutlineKeyboardArrowRight className="go-to-icon" />
       </div>
-      <div className="settings-option" onClick={() => navigate('/change-language')}>
+      {/* <div className="settings-option" onClick={() => navigate('/change-language')}>
         <span>Change Language</span>
         <MdOutlineKeyboardArrowRight className="go-to-icon" />
-      </div>
-      <div className="settings-option" onClick={() => navigate('/contact-us')}>
+      </div> */}
+      <div className="settings-option" onClick={() => navigate('/Contactus')}>
         <span>Contact Us</span>
         <MdOutlineKeyboardArrowRight className="go-to-icon" />
       </div>

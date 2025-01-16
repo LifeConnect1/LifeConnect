@@ -36,10 +36,10 @@ function PatientRegister() {
 
 
   return (
-    <div className='d-flex justify-content-center align-items-center mt-5 mb-5'>
-    <div className="text-center">
-    {err.length !== 0 && <p className='fs-4 text-danger text-center error'>{err}</p>}
-    <form className='p-4 border ' onSubmit={handleSubmit(handleFormSubmit)}>
+    <div className=''>
+    <div className="patient-form">
+    {err.length !== 0 && <p className='fs-4 text-danger text-center perror'>{err}</p>}
+    <form className=' p-4 border w-100' onSubmit={handleSubmit(handleFormSubmit)}>
     <h3 className='h3log'>Let us know more about you</h3>
        <div className='mb-3'>
         <label htmlFor="username" className="form-label">UserName</label>
@@ -75,7 +75,9 @@ function PatientRegister() {
         </select>
        </div>
 
-      <button type="submit" className="btn btn2 text-white">Connect your Life with Us!</button>
+      <div className='pbtn'>
+      <button type="submit" className="btn text-white">Connect your Life with Us!</button>
+      </div>
     </form>
     </div>
   </div>

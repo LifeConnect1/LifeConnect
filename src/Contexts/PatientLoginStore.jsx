@@ -1,4 +1,4 @@
-import { patientLoginContext } from "./PatientLoginContext";
+import { patientLoginContext } from "./patientLoginContext";
 import { useState } from "react";
 
 function PatientLoginStore({children}){
